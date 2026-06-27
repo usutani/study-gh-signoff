@@ -17,3 +17,20 @@ gh extension install basecamp/gh-signoff
 gh signoff
 ```
 
+To require signoff for PR merges
+
+```
+# Require signoff to merge PRs
+gh signoff install
+```
+
+PR を作る。サインオフしてマージする。
+
+```
+gh pr create -f
+gh pr view --web
+gh signoff status
+gh signoff
+gh signoff status
+gh pr merge -d
+```
